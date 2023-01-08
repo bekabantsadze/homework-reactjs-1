@@ -31,8 +31,62 @@
 // });
 
 
-// ეს დავალებები იქნებ ლექციაზე გავიაროთ ('_')
 
 // დავალება 3
-// დავალება 4 
+// class car {
+//     constructor (name,year)
+//     {
+//         this.name = name;
+//         this.year = year;
+//         this.speed = 0;
+//         this.movement = "car is stopped";
+//     }
+//     check_motion(){
+//         this.movement = this.speed > 0 ? "car is moving" : "car is stopped";
+//     }
+//     accelerate(speed) {
+//         this.speed += speed;
+//         this.check_motion();
+//     }
+//     brake(speed) {
+//         if(speed > this.speed) {
+//             this.speed=0;
+//         } else {
+//             this.speed-= speed;
+//         }
+//         this.check_motion();
+//     }
+//     emergencyBrake(){
+//         this.speed = 0;
+//         this.check_motion();
+//     }
+//     status(){
+//       console.log('I am ${this.name} I am moving ${this.speed} amd status is ${this.movement}');
+//     }
+// }
 
+
+// const c1 = new car ( "tesla", 2015);
+// console.log(c1);
+// c1.status();
+// c1.accelerate(50);
+// c1.status();
+// c1.brake(20);
+// c1.status();
+// c1.emergencyBrake();
+// c1.status();
+
+// დავალება 4
+// const addAsync = (num1,num2) => {
+//     return new Promise ((resolve,reject)=>{
+//         if (num1 && num2) {
+//             resolve (num1 + num2);
+//         } else {
+//             reject("please input correct values");
+//     }
+//     });
+// };
+
+// addAsync (1)
+// .then((val) => console.log("value,val"))
+// .catch ((err) => console.log(err));
